@@ -6,4 +6,5 @@ Scikit-learn
 Plotly
 Psycopg2
 Requests
+streamlit
 gunicorn
