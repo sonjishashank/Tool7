@@ -7,6 +7,7 @@ import requests
 
 app = Flask(__name__)
 CORS(app)
+app.config['TIMEOUT'] = 1800 + 600  # Increase timeout by 10 minutes
 
 # Database connection details
 host = "dpg-cobrpren7f5s73ftpqrg-a.oregon-postgres.render.com"
@@ -125,3 +126,5 @@ def get_crime_locations():
     # Return the location information as JSON
     return jsonify(locations_info)
 
+if __name__ == '__main__':
+    app.run(debug=True)
