@@ -6,16 +6,6 @@ Scikit-learn
 Plotly
 Psycopg2-binary
 Requests
-streamlit
 gunicorn
-click
-Flask
-gunicorn
-h11
-itsdangerous
-Jinja2
-MarkupSafe
-python-dotenv
 uvicorn
-waitress
-Werkzeug
+
