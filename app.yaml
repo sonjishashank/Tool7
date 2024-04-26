@@ -1,0 +1,10 @@
+runtime: python39
+entrypoint: gunicorn -b :$PORT app:app
+
+handlers:
+- url: /crime_locations
+  script: auto
+
+env_variables:
+  BING_API_KEY: "AjMNQNjkQra1lSLBQp7QsXk-IqUfE9o-Ml1jPPfJuiQIlFx3EmM3fzAF5tXYyP_k"
+  BHUVAN_TOKEN: "f0b50e5fac0ebb72705648240186ed3442f3b74a"
